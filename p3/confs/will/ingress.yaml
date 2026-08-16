@@ -7,7 +7,6 @@ spec:
   rules:
     - host: wil.local
       http:
-        host: wil.local
         paths:
           - path: /
             pathType: Prefix

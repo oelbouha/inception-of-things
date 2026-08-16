@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/oelbouha/oelbouha-iot-p3
+    repoURL: https://github.com/oelbouha/inception-of-things
     targetRevision: HEAD
     path: p3/confs/will
   destination:
