@@ -1,0 +1,17 @@
+Vagrant.configure("2") do |config|
+    config.vm.box = "bento/ubuntu-24.04"
+  
+    config.vm.define "oelbouha-p3" do |server|
+      server.vm.hostname = "oelbouhaP3"
+  
+      server.vm.network "private_network", ip: "192.168.56.110"
+  
+      server.vm.provider "virtualbox" do |vb|
+        vb.name = "oelbouha-p3"
+        vb.memory = 2048
+        vb.cpus = 2
+      end
+  
+      server.vm.provision "shell", path: "scripts/install.sh"
+    end
+  end
